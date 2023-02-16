@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-inner">
+        <div class="container-inner-top">
+          <input type="color" id="color-picker" class="color-picker" />
+          <div class="color-select-container">
+            <select id="color-select" name="color">
+              <option value="monochrome">Monochrome</option>
+              <option value="monochrome-dark">Monochrome-Dark</option>
+              <option value="monochrome-light">Monochrome-Light</option>
+              <option value="analogic">Analogic</option>
+              <option value="complement">Complement</option>
+            </select>
+          </div>
+          <button id="btn" class="btn">Get a color scheme</button>
+        </div>
+        <div id="container-inner-main" class="container-inner-main"></div>
+        <div id="container-inner-bottom" class="container-inner-bottom"></div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="app.js"></script>
+  </body>
+</html>
